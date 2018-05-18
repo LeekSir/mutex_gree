@@ -11,7 +11,7 @@
 #include <fcntl.h>
 
 //打开串口
-int open_port(void)
+int open_uart(void)
 {
 	int fd;
 	fd = open("/dev/ttyUSB0", O_RDWR | O_NOCTTY | O_NONBLOCK);
@@ -26,6 +26,17 @@ int open_port(void)
 	}
 
 	return fd;
+}
+
+//
+void uart_send(int fd, uchar* cmt, int length)
+{
+
+}
+//
+void uart_recv(int fd, uchar* ret, int length)
+{
+
 }
 
 int main()

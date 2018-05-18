@@ -8,7 +8,9 @@
 #include<stdio.h>
 
 #define ALL_VEIN -1
+#define DEV_ID 1
 typedef unsigned char uchar;
+
 
 //vein check touch/notouch
 int vein_check()
